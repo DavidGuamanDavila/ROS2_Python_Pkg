@@ -1,9 +1,9 @@
 # Python Pkg in ROS 2
 ## Prerequisite
-- (ROS 2 Humble)[https://docs.ros.org/en/humble/Installation.html] and Setup
-- Initialize a (Catkin Workspace)[https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html]
+- [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html) and Setup
+- Initialize a [Catkin Workspace](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
 ## Colcon Setup
-1. Install (Colcon)[https://colcon.readthedocs.io/en/released/] Command Extensions
+1. Install [Colcon](https://colcon.readthedocs.io/en/released/) Command Extensions
 ```
 sudo apt install python3-colcon-command-extensions
 ```
@@ -66,3 +66,7 @@ pip3 install setuptools==58.2.0
 ```
 colcon build --packages-select name_of_your_pkg
 ```
+
+## Resources
+- [ROS 2 Documentation](https://docs.ros.org/en/humble/index.html)
+- Udemy Course [ROS 2 for Beginners](https://www.udemy.com/course/ros2-for-beginners/?couponCode=2021PM20)
