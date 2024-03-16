@@ -48,7 +48,7 @@ cd ros2_ws/src
 2. Create your Package
 ```
 ros2 pkg create my_py_pkg --build-type ament_python --dependencies rclpy
-'''
+```
 3. Now build your workspace
 ```
 colcon build
