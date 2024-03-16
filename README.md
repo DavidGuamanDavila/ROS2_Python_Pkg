@@ -59,7 +59,7 @@ colcon build
 ```
 pip3 list | grep setuptools
 ```
-4.2 Download the setuptools 58.2.0 version
+4.2 Downgrade the setuptools 58.2.0 version
 ```
 pip3 install setuptools==58.2.0
 ```
