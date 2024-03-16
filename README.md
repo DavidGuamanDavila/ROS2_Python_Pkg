@@ -52,6 +52,7 @@ ros2 pkg create my_py_pkg --build-type ament_python --dependencies rclpy
 3. Now build your workspace
 ```
 colcon build
+```
 4. If there is an issue with your colocon build command do the following. 
 
 4.1 Look at the version of setuptools using pip3. You require pip3 list to do this. 
