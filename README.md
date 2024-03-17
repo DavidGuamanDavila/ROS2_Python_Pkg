@@ -67,7 +67,38 @@ pip3 install setuptools==58.2.0
 ```
 colcon build --packages-select name_of_your_pkg
 ```
+## How to ROS RUN your node
+1. Begin by making your node file exectuable
+```
+chmod +x my_first_node.py
+```
+2. Edit Setup.py
+```
+entry_points={
+    'console_scripts': [
+        'this_can_be_any_name = my_py_pkg.my_first_node:main',
+    ],
+},
+```
+3.Make sure you have all the dependencies
+```
+rosdep install -i --from-path src --rosdistro humble -y
+```
+4. Build your package
+```
+cd ~/ros2_ws
+colcon build
+```
+5. Source the setup file
+```
+source install/setup.bash
+```
+6. Now ROS RUN
+```
+ros2 run my_py_pkg my_first_node
+```
 
 ## Resources
 - [ROS 2 Documentation](https://docs.ros.org/en/humble/index.html)
 - Udemy Course [ROS 2 for Beginners](https://www.udemy.com/course/ros2-for-beginners/?couponCode=2021PM20)
+- [Simple Node Tutorial](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html#build-and-run) 
