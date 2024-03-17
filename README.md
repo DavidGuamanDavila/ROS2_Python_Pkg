@@ -101,3 +101,4 @@ ros2 run my_py_pkg my_first_node
 ## Resources
 - [ROS 2 Documentation](https://docs.ros.org/en/humble/index.html)
 - Udemy Course [ROS 2 for Beginners](https://www.udemy.com/course/ros2-for-beginners/?couponCode=2021PM20)
+- [Simple Node Tutorial](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html#build-and-run) 
