@@ -97,7 +97,11 @@ source install/setup.bash
 ```
 ros2 run my_py_pkg my_first_node
 ```
-
+## How to develop without building everytime?
+The follwoing command just needs to be executed once. After that all the changes you make will be updated when you do ros run. The condition for this is that the your node is an executable file
+```
+colcon build --packages-select my_py_pkg --symlink-install
+```
 ## Resources
 - [ROS 2 Documentation](https://docs.ros.org/en/humble/index.html)
 - Udemy Course [ROS 2 for Beginners](https://www.udemy.com/course/ros2-for-beginners/?couponCode=2021PM20)
